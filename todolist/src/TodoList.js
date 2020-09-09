@@ -52,7 +52,7 @@ import React, { Component } from "react";
       <div className="todoListMain">
         <div className="header">
           <form onSubmit={this.addItem}>
-            <input ref={(a) => this._inputElement = a} placeholder="enter task">
+            <input ref={(a) => this._inputElement = a} placeholder="Task?">
             </input>
             <button type="submit">add</button>
           </form>
