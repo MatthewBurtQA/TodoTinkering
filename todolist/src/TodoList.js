@@ -1,5 +1,5 @@
 import React, { Component } from "react";
- 
+ // Below is a div, and some input placeholder with button. this will then get called into the index JS to be called onto the screen.
 class TodoList extends Component {
   render() {
     return (
