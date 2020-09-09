@@ -11,6 +11,11 @@ import React, { Component } from "react";
     constructor(props) {
         
         super(props);
+        
+        this.state={
+          items: []  // declaring an array of items. saves inputs to item array 
+        };
+        
         this.addItem = this.addItem.bind(this);
     
      }
@@ -24,7 +29,7 @@ import React, { Component } from "react";
       <div className="todoListMain">
         <div className="header">
           <form onSubmit={this.addItem}>
-            <input placeholder="enter task">
+            <input ref={(a) => this._inputElement = a} placeholder="enter task">
             </input>
             <button type="submit">add</button>
           </form>
