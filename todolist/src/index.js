@@ -8,7 +8,7 @@ var destination = document.querySelector("#container");
   
 ReactDOM.render(
     <div>
-        <TodoList/> //this calls the todolist, imported above.
+        <TodoList/> 
     </div>,
     destination
 );
