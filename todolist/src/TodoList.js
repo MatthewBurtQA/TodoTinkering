@@ -1,5 +1,8 @@
 import React, { Component } from "react";
- // Below is a div, and some input placeholder with button. this will then get called into the index JS to be called onto the screen.
+import TodoItems from "./TodoItems";
+
+
+// Below is a div, and some input placeholder with button. this will then get called into the index JS to be called onto the screen.
 class TodoList extends Component {
   render() {
     return (
@@ -11,6 +14,7 @@ class TodoList extends Component {
             <button type="submit">add</button>
           </form>
         </div>
+        <TodoItems entries={this.state.items}/>
       </div>
     );
   }
